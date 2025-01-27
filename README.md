@@ -12,7 +12,7 @@ This program was created after discovering that my display does not work with <b
 
 ### Syntax
 ```
-writeValueToScreen.exe <display_index> <input_value> <command_code> [register_address]
+writeValueToDisplay.exe <display_index> <input_value> <command_code> [register_address]
 ```
 
 | Argument | Description |
@@ -27,13 +27,13 @@ writeValueToScreen.exe <display_index> <input_value> <command_code> [register_ad
 ## Example Usage
 Change display 0 brightness to 50% using VCP code 0x10
 ```
-writeValueToScreen.exe 0 0x32 0x10 
+writeValueToDisplay.exe 0 0x32 0x10 
 ```
 <br>
 
 Change display 0 input to HDMI 1 using VCP code 0x60 on supported displays
 ```
-writeValueToScreen.exe 0 0x11 0x60 
+writeValueToDisplay.exe 0 0x11 0x60 
 ```
 
 ### Change input on some displays
@@ -42,11 +42,11 @@ Some displays do not support using VCP codes to change inputs. I have tested thi
 #### Change input to HDMI 1 on LG Ultragear 27GP850-B
 NOTE: LG Ultragear 27GP850-B is display 0 for me
 ```
-writeValueToScreen.exe 0 0x90 0xF4 0x50
+writeValueToDisplay.exe 0 0x90 0xF4 0x50
 ```
 
 #### Change input to Displayport on LG Ultragear 27GP850-B
 NOTE: LG Ultragear 27GP850-B is display 0 for me
 ```
-writeValueToScreen.exe 0 0xD0 0xF4 0x50
+writeValueToDisplay.exe 0 0xD0 0xF4 0x50
 ```
