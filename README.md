@@ -17,7 +17,7 @@ writeValueToDisplay.exe <display_index> <input_value> <command_code> [register_a
 
 | Argument | Description |
 | -------- | ----------- |
-| display_index | Index assigned to monitor by OS (0 for first screen) |
+| display_index | Index assigned to monitor by OS (Typically 0 for first screen, try running "mstsc.exe /l" in command prompt to see how windows has indexed your display(s)) |
 | input_value   | value to write to screen |
 | command_code  | VCP code or other|
 | register_address | Address to write to, default 0x51 for VCP codes |
